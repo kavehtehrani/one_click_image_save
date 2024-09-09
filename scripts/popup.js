@@ -2,17 +2,11 @@
 document.addEventListener('DOMContentLoaded', async () => {
     const data = await chrome.storage.sync.get(['customShortcut']);
     const shortcutInput = document.getElementById('shortcutInput');
-    if (data.customShortcut) {
-        shortcutInput.value = data.customShortcut;
-    }
+    shortcutInput.value = data.customShortcut || "CTRL + ALT + LEFT CLICK";
 });
 
 let shortcut = {
-    ctrl: false,
-    alt: false,
-    shift: false,
-    meta: false,
-    button: null
+    ctrl: false, alt: false, shift: false, meta: false, button: null
 };
 
 
