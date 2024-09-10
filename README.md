@@ -8,4 +8,6 @@ extension settings. Alternatively, use the context menu to save the image when y
 
 ![One-Click Image Saver](./images/one_click_image_saver_context_menu.png)
 
+Images are saved to the default download location in a subfolder named "OneClickImageSave". Modern browsers severely restrict access to the file system, so the extension cannot save images to a custom location.
+
 No ads, no tracking, no behind-the-scene snooping. Open source and free to use! Comments welcome.
